@@ -1,0 +1,10 @@
+<% if line_item == @current_item %>
+  <tr id="current_item" class="<%= line_item.id %>">
+<% else %>
+  <tr class="<%= line_item.id %>">
+<% end %>
+     <td class="item_quantity">(<%= line_item.quantity %>)</td>
+     <td><%= line_item.product.title %> </td>
+     <td class="total_price"><%= line_item.total_price %></td>
+     <td><%= button_to 'x', line_item, method: :delete, remote: true, class: "item_delete" %></td>
+</tr>

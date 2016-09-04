@@ -1,0 +1,3 @@
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+$('.<%= @deleted_item %>').css({'background-color':'red'}).animate({'background-color':'#5c6bc0'}, 1000);
+

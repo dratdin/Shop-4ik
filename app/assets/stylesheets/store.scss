@@ -1,0 +1,68 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.visited {
+	position: fixed;
+	width: 13em;
+	color: white;
+	background-color: #96add3;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	border-left: 3px solid silver;
+	border-right: 3px solid silver;
+	bottom: 0;
+	right: 200px;
+}
+
+#time {
+	bottom: 17px;
+	border-top: 3px solid silver;
+}
+
+.store {
+	
+	.entry {
+		overflow: auto;
+		margin-top: 1em;
+		border-bottom: 1px dotted #77d;
+		min-height: 130px;
+
+		img {
+			max-width: 80px;
+			max-height: 110px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			position: absolute;
+			border-radius: 5px;
+			box-shadow: 0 0 10px black;
+		}
+
+		h3 {
+			font-size: 120%;
+			font-family: sans-serif;
+			margin-left: 100px;
+			margin-top: 0;
+			margin-bottom: 2px;
+			color: #227;  
+		}
+
+		p, div.price_line {
+			margin-left: 100px;
+			margin-top: 0.5em;
+			margin-bottom:  0.8em;
+		}
+
+		.price {
+			color: #44a;
+			font-weight: bold;
+			margin-right: 3em;
+		}
+
+		form, div {
+			display: inline;
+		}
+	}
+}

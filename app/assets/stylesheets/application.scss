@@ -1,0 +1,167 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	background-color:#e8eaf6;
+}
+
+.page_description {
+		margin: 0;
+		padding-bottom: 0.5em;
+		font: 150% sans-serif;
+		color: #226;
+		border-bottom: 3px dotted #77d; 
+		position: absolute;
+		right: 10px;
+ }
+
+ #banner {
+ 	display: block;
+ 	padding: 30px 0;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font-weight: bold;
+ 	font-size: 30px;
+ 	text-shadow: 0 0 30px blue;
+ 	
+ 	a {
+ 		text-decoration: none;
+ 		color: white;
+ 	}
+
+ 	a:hover {
+ 		background-color:#e8eaf6;
+ 		color: white; 	
+ 	}
+ }
+
+ #notice {
+ 	color: #000 !important;
+ 	border: 2px solid red;
+ 	padding: 1em;
+ 	margin-bottom: 2em;
+ 	background-color: #f0f0f0;
+ 	font: bold smaller sans-serif;
+ }
+
+#columns {
+	
+	#main {
+		margin-left: 18em;
+		padding: 1em;
+		background: white;
+		box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	}
+
+	#side {
+		float: left;
+		padding: 15px 0;
+		width: 234px;
+		background: #5c6bc0;
+		border-radius: 10px 0 0 10px;
+
+		#cart {
+			width: 99%;
+			margin: 0 auto;
+			color: white;
+
+			h2 {
+				text-align: center;
+			}
+
+			.total_price::before {
+				content: "$";
+			}
+			.total_price {
+				color: #d6fcd8;
+			}
+
+			table {
+				border-top: 1px dotted;
+				border-color: pink;
+				width: 100%;
+				
+				tr {
+					.item_quantity {
+						font-size:10px;
+						color: pink;
+					}
+				}
+			}
+
+			input { 
+				display: inline-block;
+				font-size: small;
+			}
+		}
+		
+		a, a:hover {
+			text-decoration: none;
+			background: none;
+			text-align: center;
+			color: white;
+		}
+
+		.checkout {
+			margin: 20px auto;
+			padding: 5px 0;
+			display: block;
+			width: 80%;
+			border: 2px dotted white;
+		}	
+		.checkout:hover {
+				background-color: #e81098;
+		}
+	}
+}
+
+.mihan_forms {
+
+	fieldset {
+		background: #a7b2f2;
+		
+		legend {
+			color: #dfd;
+			background: #5161ba;
+			font-family: sans-serif;
+			padding: 0.2em 1em;
+		}
+	}
+	
+	form { 
+		
+		label {
+			width: 5em;
+			float: left;
+			text-align: right;
+			padding-top: 0.2em;
+			margin-right: 0.1em;
+			display: block;
+		}
+
+		select, textarea, input {
+			margin-left: 0.5em;
+		}
+	
+		.submit {
+			margin-left: 4em;
+		}
+
+		br {
+			display: none
+		}
+	}
+}

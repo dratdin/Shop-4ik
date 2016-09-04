@@ -1,0 +1,39 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+<h1>Mihan Shop EEE</h1>
+<h2>How read versions?</h2>
+<h3>0.0.0.0</h3>
+<h4>Digits</h4>
+<ul>
+	<li>First: global arhitechture changes</li>
+	<li>Second: operability with real users</li>
+	<li>Third: stylization level</li>
+	<li>Fourth: level of functionality</li>
+</ul>

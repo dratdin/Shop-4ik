@@ -1,0 +1,6 @@
+if ($('#cart tr').length != undefined) { 
+	$('#cart').show('blind', 1000); 
+}
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+$('#current_item').css({'background-color':'#b5d1ff'}).animate({'background-color':'#5c6bc0'}, 1000);
+$('#notice').hide();
